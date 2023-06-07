@@ -1,0 +1,35 @@
+
+
+header{
+    text-align: center;
+
+}
+h1{
+    text-align: center;
+}
+
+.unterdiv {
+   text-align: center;
+    width: 25%;
+}
+
+
+
+.coding{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+.text-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
