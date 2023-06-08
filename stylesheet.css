@@ -13,6 +13,10 @@ h1{
     width: 25%;
 }
 
+body{
+    background: url("italyflag.png");
+    background-size: cover;
+}
 
 
 .coding{
@@ -20,7 +24,10 @@ h1{
     justify-content: space-evenly;
 }
 
-
+hr{
+    border-width: 3px;
+    color: black;
+}
 
 
 .text-container{
@@ -32,4 +39,10 @@ h1{
     display: flex;
     justify-content: space-evenly;
     width: 100vw;
+}
+
+.navigation{
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
 }
