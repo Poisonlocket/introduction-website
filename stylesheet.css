@@ -46,3 +46,18 @@ hr{
     padding: 10px;
     text-align: center;
 }
+
+.software-dev-title{
+    text-align: center;
+    padding: 5px;
+}
+
+.software-dev-article {
+    padding-left: 250px;
+    padding-right: 250px;
+    font-weight: bolder;
+}
+
+.unterdiv2  {
+    justify-content: space-evenly;
+}
