@@ -14,7 +14,7 @@ h1{
 }
 
 body{
-    background: url("italyflag.png");
+    background: #2F3438;
     background-size: cover;
 }
 
@@ -60,4 +60,9 @@ hr{
 
 .unterdiv2  {
     justify-content: space-evenly;
+}
+
+body {
+    color: white;
+    font-family: "Courier New", monospace;
 }
