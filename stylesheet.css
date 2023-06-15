@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono',monospace;
+}
 
 
 header{
@@ -43,8 +51,9 @@ hr{
 
 .navigation{
     justify-content: space-between;
-    padding: 10px;
-    text-align: center;
+    align-items: center;
+
+    padding: 20px;
 }
 
 .software-dev-title{
@@ -66,3 +75,41 @@ body {
     color: white;
     font-family: "Courier New", monospace;
 }
+
+.nav {
+    position: relative;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+.nav:hover{
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+    color: var(--clr);
+}
+
+.nav:before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #2F3438;
+}
+
+.nav span{
+    position: relative;
+    z-index: 1;
+}
+
+.nav i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
