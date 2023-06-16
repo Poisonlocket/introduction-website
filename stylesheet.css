@@ -19,6 +19,8 @@ h1{
 .unterdiv {
    text-align: center;
     width: 25%;
+    align-content: center;
+    justify-content: space-evenly;
 }
 
 body{
@@ -69,6 +71,7 @@ hr{
 
 .unterdiv2  {
     justify-content: space-evenly;
+    align-content: center   ;
 }
 
 body {
@@ -93,6 +96,7 @@ body {
     background: var(--clr);
     box-shadow: 0 0 35px var(--clr);
     color: var(--clr);
+    filter: brightness(1.5);
 }
 
 .nav:before {
@@ -113,3 +117,19 @@ body {
     display: block;
 }
 
+.hobbysubdiv {
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 60px;
+    list-style-position: inside;
+}
+.hobbysubdiv li{
+    padding: 3px;
+}
+
+.hobbysubdiv img{
+    padding-bottom: 20px;
+}
+
+.hobbysubdiv ol{
+}
