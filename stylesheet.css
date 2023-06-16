@@ -131,5 +131,24 @@ body {
     padding-bottom: 20px;
 }
 
-.hobbysubdiv ol{
+.selfie{
+    border: 5px solid   white;
+    filter:brightness(1);
+
+}
+.selfie:hover{
+    background: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+    color: var(--clr);
+    filter: brightness(1.1);
+    transition: 0.4s;
+}
+
+
+.unterdiv:hover{
+    background: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+    color: var(--clr);
+    filter: brightness(1.4);
+    transition: 0.4s;
 }
