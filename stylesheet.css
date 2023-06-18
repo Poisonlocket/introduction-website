@@ -21,10 +21,12 @@ h1{
     width: 25%;
     align-content: center;
     justify-content: space-evenly;
+    filter:brightness(0.3);
+    opacity: 20%;
 }
 
 body{
-    background: #2F3438;
+    background: #121212;
     background-size: cover;
 }
 
@@ -58,12 +60,14 @@ body{
 .software-dev-title{
     text-align: center;
     padding: 5px;
+    padding-bottom: 30px;
 }
 
 .software-dev-article {
     padding-left: 250px;
     padding-right: 250px;
     font-weight: bolder;
+
 }
 
 .unterdiv2  {
@@ -130,7 +134,8 @@ body {
 
 .selfie{
     border: 5px solid   white;
-    filter:brightness(1);
+    filter:brightness(0.4);
+    opacity: 20%;
 
 }
 .selfie:hover{
@@ -138,6 +143,7 @@ body {
     box-shadow: 0 0 35px var(--clr);
     color: var(--clr);
     filter: brightness(1.1);
+    opacity: 100%;
     transition: 0.4s;
 }
 
@@ -146,6 +152,17 @@ body {
     background: var(--clr);
     box-shadow: 0 0 35px var(--clr);
     color: var(--clr);
-    filter: brightness(1.4);
-    transition: 0.4s;
+    filter: brightness(1.1);
+    transition: 1.2s;
+    opacity: 100%;
 }
+
+.coding_skills{
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+.software-dev-text{
+    padding-bottom: 30px;
+}
+
