@@ -60,8 +60,7 @@ body{
 
 .software-dev-title{
     text-align: center;
-    padding: 5px;
-    padding-bottom: 30px;
+    padding: 5px 5px 30px;
 }
 
 .software-dev-article {
@@ -129,9 +128,7 @@ body {
     padding: 3px;
 }
 
-.hobbysubdiv img{
-    padding-bottom: 20px;
-}
+
 
 .selfie{
     border: 5px white;
@@ -164,7 +161,10 @@ body {
 }
 
 .software-dev-text{
-    padding-bottom: 30px;
+    border: 2px solid #57504d;
+    border-radius: 0 0 10px 10px;
+    padding: 10px 5px 30px;
+
 }
 
 .hobby-text{
@@ -250,4 +250,24 @@ body {
 .form-header{
     text-align: center;
     padding: 20px;
+}
+
+.hobby-img{
+    border-radius: 25px;
+    border: #ffffff 2px solid ;
+}
+
+.terminal-script{
+    color: chartreuse;
+    padding-bottom: 20px;
+}
+
+.terminal-styling{
+    border: #57504d 2px solid;
+    height: 40px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px;
+    font-size: 25px;
+    padding-left: 5px;
+    background: #2F3438;
 }
