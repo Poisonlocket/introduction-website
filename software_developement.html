@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <!--Credit to Poisonlocket and Error44 if you adapt any part of this code you will give credit in yours too.-->
+<!--The code for the Slider on the Softwaredevelopement is the Source code of Error44 The Rest is Owned by Poisonlocket-->
+
 <html lang='de-CH'>
 <head>
+
   <meta charset='UTF-8'>
   <title>Softyware Developement</title>
+  <link rel="stylesheet" href="style.css">
   <link rel='stylesheet' href=stylesheet.css>
   <script src="https://kit.fontawesome.com/cd8bf302c7.js" crossorigin="anonymous"></script>
 
@@ -27,8 +31,7 @@
 
 
     <div class='terminal-styling'>
-
-      CMD
+    CMD
     </div>
     <section class='software-dev-text'>
       <section class='terminal-script'>
@@ -41,10 +44,93 @@
 
       Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
     </section>
+    <div class="slider">
+      <div class="slider-wrapper flex">
+        <div class="slide flex">
+          <div class="slide-image slider-link prev"><i class="fa-solid fa-book fa-10x"></i>
+            <div class="overlay"></div></div>
+          <div class="slide-content">
+            <div class="slide-title">Ausbildung</div>
+            <div class="slide-text">Dein Text...</div>
+          </div>
+        </div>
+        <div class="slide flex">
+          <div class="slide-image slider-link next"><i class="fa-solid fa-graduation-cap fa-10x"></i><div  class="overlay"></div></div>
+          <div class="slide-content">
+            <div class="slide-title">Abschluss</div>
+            <div class="slide-text">Dein Text...</div>
+          </div>
+        </div>
+        <div class="slide flex">
+          <div class="slide-image slider-link next"><i class="fa-solid fa-shield-halved fa-10x"></i><div class="overlay"></div></div>
+          <div class="slide-content">
+            <div class="slide-title">Security</div>
+            <div class="slide-text">Dein Text...</div>
+          </div>
+        </div>
+        <div class="slide flex">
+          <div class="slide-image slider-link next"><i class="fa-solid fa-code fa-10x"></i><div class="overlay"></div></div>
+          <div class="slide-content">
+            <div class="slide-title">Entrepreneur</div>
+            <div class="slide-text">Dein Text...</div>
+          </div>
+        </div>
+      </div>
+      <div class="arrows">
+        <a href="#" title="Previous" class="arrow slider-link prev"></a>
+        <a href="#" title="Next" class="arrow slider-link next"></a>
+      </div>
+    </div>
+
+
 
 
   </article>
-</main>
+  <footer class='footer'>
+    <div class='footer-container'>
+      <div class='row'>
+        <div class='footer-col'>
+          <h4>My Service</h4>
+          <ul>
+            <li><a href='#'>Web Development</a></li>
+            <li><a href='#'>Python Software</a></li>
+            <li><a href='#'>SQL Database</a></li>
+            <li><a href='#'>Webspace Maintenance</a></li>
+            <li><a href='#'>Software Maintenance</a></li>
+          </ul>
+        </div>
+        <div class='footer-col'>
+          <h4>My Socials</h4>
+          <div class='social-links'>
+            <a href='#'><i class="fa-brands fa-github"></i></a>
+            <a href='#'><i class="fa-brands fa-instagram"></i></a>
+            <a href='#'><i class="fa-brands fa-discord"></i></a>
+            <a href='#'><i class="fa-solid fa-chess-board "></i></a>
+          </div>
+        </div>
+        <div class='footer-col'>
+          <h4>Contact me</h4>
 
+          <ul>
+            <li><a href='#'>Email</a></li>
+            <li><a href='#'>Website</a></li>
+          </ul>
+        </div>
+        <div class='footer-col'>
+          <h4>Rechtliche Hinweise</h4>
+          <ul>
+            <li><a href='#'>Impressum</a></li>
+            <li><a href='#'>Disclaimer</a></li>
+            <li><a href='#'>Datenschutzerklärung</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
