@@ -55,6 +55,7 @@ body {
     line-height: 1.2vw;
     opacity: 0.8;
     padding-bottom: 4vw;
+
 }
 
 .slide-bullet {
@@ -102,7 +103,7 @@ div.overlay-black {
 }
 
 .arrow:hover {
-    border-color: #e91e63;
+    border-color: gold;
     border-width: 0.25vw;
 }
 
