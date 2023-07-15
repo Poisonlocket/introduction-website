@@ -49,7 +49,7 @@
       </div>
           <div class='inputBox'>
               <input type='email' name="email" required='required'>
-              <span>Email</span>
+              <span>E-mail</span>
           </div>
 
 
