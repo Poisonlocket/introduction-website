@@ -135,6 +135,7 @@ body {
     border: 5px white;
     filter:brightness(0.4);
     opacity: 20%;
+    border-radius: 1000px;
 
 
 }
@@ -144,7 +145,7 @@ body {
     filter: brightness(1.1);
     opacity: 100%;
     transition: 0.4s;
-    box-shadow: 0 0 15px 4px;
+    box-shadow: 0 0 15px 4px chartreuse;
 }
 
 
@@ -470,4 +471,37 @@ display:flex;
 #swisshubtext{
     margin-left: 450px;
     margin-right: 450px;
+}
+
+    .project-articles{
+    width: 700px;
+    text-align: center;
+}
+
+#pfp{
+    border-radius: 1000px;
+    margin: 25px;
+    box-shadow: 0 0 15px 5px chartreuse;
+}
+
+.Nitrogen-title{
+    color: #00ffe1;
+    margin-top: 30px;
+}
+
+#nitrogenimg{
+    border-radius: 1000px;
+    margin: 25px;
+    box-shadow: 0 0 15px 5px #00ffe1;
+}
+
+.project-dev-article {
+    padding-left: 250px;
+    padding-right: 250px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.website-dev-title{
+    color: chartreuse;
 }
