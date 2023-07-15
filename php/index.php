@@ -6,7 +6,7 @@
 <head>
   <meta charset='UTF-8'>
   <title>Title</title>
-  <link rel='stylesheet' href=stylesheet.css>
+  <link rel='stylesheet' href=../css/stylesheet.css>
   <script src="https://kit.fontawesome.com/cd8bf302c7.js" crossorigin="anonymous"></script>
 
 </head>
@@ -16,11 +16,11 @@
 <header>
   <h1>Kontakt</h1>
   <nav class='navigation'>
-    <a class='nav' href='home.html' style='--clr:#D3D3D3'><span>Home</span><i></i></a>
-    <a class='nav' href='software_developement.html' style='--clr:#D3D3D3'><span>Software Developement</span><i></i></a>
-    <a class='nav' href='Hobbys.html' style='--clr:#D3D3D3'><span>Hobbys</span><i></i></a>
-    <a class='nav' href='projects.html' style='--clr:#D3D3D3'><span>Projekte</span><i></i></a>
-    <a class='nav' href='Kontakt.html' style='--clr:#D3D3D3'><span>Kontakt</span><i></i></a>
+    <a class='nav' href='../html/index.html' style='--clr:#D3D3D3'><span>Home</span><i></i></a>
+    <a class='nav' href='../html/software_developement.html' style='--clr:#D3D3D3'><span>Software Developement</span><i></i></a>
+    <a class='nav' href='../html/Hobbys.html' style='--clr:#D3D3D3'><span>Hobbys</span><i></i></a>
+    <a class='nav' href='../html/projects.html' style='--clr:#D3D3D3'><span>Projekte</span><i></i></a>
+    <a class='nav' href='index.php'' style='--clr:#D3D3D3'><span>Kontakt</span><i></i></a>
   </nav>
 </header>
 <main>
@@ -29,23 +29,32 @@
       Haben Sie eine Frage an mich?
     </h2>
     <div class='form-container'>
-      <form class='inputform'>
+      <form class='inputform' method="post" action="">
   <div class='inputBox'>
-    <input type='text' id='vorname' required='required'>
-    <span>Vorname</span>
 
-
+    <input type='text' id='vorname' name="vorname" required='required'>
+      <span>Vorname</span>
   </div>
   <div class='inputBox'>
-    <input type='text' required='required' id='nachname'>
+    <input type='text' required='required' name="nachname" id='nachname'>
     <span>Nachname</span>
   </div>
-      <div class='inputBox'>
-        <input type='text' required='required'>
-        <span>Meine Frage</span>
+          <div class='inputBox'>
+              <input type='text' name="subject" required='required'>
+              <span>Thema</span>
+          </div>
+          <div class='inputBox'>
+            <input type='text' name="question" required='required'>
+            <span>Meine Frage</span>
       </div>
+          <div class='inputBox'>
+              <input type='email' name="email" required='required'>
+              <span>Email</span>
+          </div>
+
+
       <div class='inputBox'>
-        <input type='Submit' required='required'>
+        <input type='Submit' name="submit-btn" required='required'>
         <span></span>
 
       </div>
@@ -93,8 +102,8 @@
           <h4>Rechtliche Hinweise</h4>
           <ul>
             <li><a href='#'>Impressum</a></li>
-            <li><a href='Disclaimer.pdf' download='Disclaimer.pdf'>Disclaimer</a></li>
-            <li><a href='Datenschutzerklärung.pdf' download='Datenschutzerklärung.pdf'>Datenschutzerklärung</a></li>
+            <li><a href='../Disclaimer.pdf' download='Disclaimer.pdf'>Disclaimer</a></li>
+            <li><a href='../Datenschutzerklärung.pdf' download='Datenschutzerklärung.pdf'>Datenschutzerklärung</a></li>
           </ul>
         </div>
       </div>
@@ -111,5 +120,24 @@
         progress.style.height = progressHeight + '%';
     }
 </script>
+<?php
+
+if(isset($_POST['submit'])) {
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
+    $question = $_POST['question'];
+    $emailfrom = $_POST['email'];
+    $subject = $_POST['subject'];
+
+    $mailto = 'loribono@gmx.ch';
+    $headers = 'From: '.$emailfrom;
+    $txt = 'You have a recieved an e-mail from'.$firstname.".$lastname.\n\n".$question;
+
+    mail($mailto, $subject, $question, $headers);
+    header('Location: index.php?mailsend');
+
+}
+?>
 </body>
 </html>
+
